@@ -7,7 +7,7 @@ from IPython.display import Audio , display
 def play_sound(self, etype, value, tb, tb_offset=None):
     
     self.showtraceback((etype, value, tb), tb_offset=tb_offset)
-    display(Audio("PATH/TO/FILE.mp3", autoplay=True))
+    display(Audio("PATH/TO/FILE/wow.mp3", autoplay=True))
     
 get_ipython().set_custom_exc((Exception,), play_sound)
 
